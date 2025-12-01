@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Alat Gunung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Toko Alat Gunung</h1>
+
+        <nav>
+            <button class="tab-btn active" data-tab="carrier">Carrier</button>
+            <button class="tab-btn" data-tab="sepatu">Sepatu</button>
+            <button class="tab-btn" data-tab="camp">Camp Set</button>
+            <button class="tab-btn" data-tab="lain">Lain-lain</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CARRIER -->
+        <section id="carrier" class="tab-content active">
+            <h2>Carrier</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h3>Carrier 40L</h3>
+                    <p>Rp 450.000</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://img.id.my-best.com/product_images/2e1ebe30d87dc886980c8501a5a37f13.png?ixlib=rails-4.3.1&q=45&lossless=0&w=160&h=160&fit=clip&s=61ebc5998fff787296037205e6a5116f" alt="">
+                    <h3>Carrier 60L</h3>
+                    <p>Rp 650.000</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://img.id.my-best.com/product_images/846d44ca2051f7213d2a50b8537077e0.png?ixlib=rails-4.3.1&q=45&lossless=0&w=160&h=160&fit=clip&s=a5e9a276c276d278302bd20c1b685198" alt="">
+                    <h3>Carrier 80L</h3>
+                    <p>Rp 850.000</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEPATU -->
+        <section id="sepatu" class="tab-content">
+            <h2>Sepatu Gunung</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/155f0j00pUboyiZqSdrm/China-Factory-Low-Price-Professional-Custom-Sports-Shoes-Running-Walking-Style-Shoes-Men-Hiking-Boots-Safety-Shoes.webp" alt="">
+                    <h3>Sepatu Hiking Low</h3>
+                    <p>Rp 350.000</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/201f0j00ENsoChBlQwzm/Outdoor-Plush-Fleece-Shoes-Hiking-Men-High-Cut-Microfiber-Leather-Winter-Warm-Snow-Big-Size-Mens-Working-Boots.webp" alt="">
+                    <h3>Sepatu Hiking High</h3>
+                    <p>Rp 550.000</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CAMP SET -->
+        <section id="camp" class="tab-content">
+            <h2>Camp Set</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/201f0j00ANPqtzsCMikS/Lightweight-Backpacking-Hiking-Outdoor-Tactical-Equipment-Dome-Camouflage-Camping-Tent-for-2-Person.webp" alt="">
+                    <h3>Tenda Dome 2P</h3>
+                    <p>Rp 500.000</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/201f0j00aMjkubiJlopA/Cozy-Mommy-Style-Sleeping-Bag-for-Outdoor-Adventures-in-5-15-C.webp" alt="">
+                    <h3>Sleeping Bag</h3>
+                    <p>Rp 150.000</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LAIN-LAIN -->
+        <section id="lain" class="tab-content">
+            <h2>Perlengkapan Lain</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/201f0j00WUAYDRbnAqoK/New-Bright-3W-COB-LED-Headlamp-3-AAA-Headlamp.webp" alt="">
+                    <h3>Headlamp</h3>
+                    <p>Rp 60.000</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://image.made-in-china.com/201f0j00vINeHCLklJqa/Camping-Stove-The-Factory-s-New-Small-Folding-Portable-Camping-Stove.webp" alt="">
+                    <h3>Kompor Portable</h3>
+                    <p>Rp 120.000</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
